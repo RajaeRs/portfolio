@@ -19,9 +19,9 @@ const Project = () => {
                 <p className="text-xl font-bold">projects(2)</p>
             </div>
             <div className="">
-                {/* <div 
+                <div 
                     className="absolute inset-0 bg-[url('/images/background.svg')] bg-cover bg-no-repeat bg-top -z-10">
-                </div> */}
+                </div>
                 <div className="container w-full">
                     <div className="flex flex-col-reverse md:flex-row pt-10">
                         <div className="w-[80%] h-[800px] border border-accent/20 rounded-xl">
