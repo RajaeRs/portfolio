@@ -5,7 +5,6 @@ import { useState, useRef, useEffect, CSSProperties, MouseEvent } from 'react';
 
 const ImageSection = () => {
     const [imageSize, setImageSize] = useState({ width: 0, height: 0 });
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [circlePositions, setCirclePositions] = useState([
         { x: -0.2, y: -0.2, size: 1.5, scale: 1 },
         { x: -0.1, y: 0.7, size: 150, scale: 1 },
@@ -42,7 +41,6 @@ const ImageSection = () => {
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
             
-            setMousePosition({ x, y });
 
             // Update circle positions with smooth movement and boundary constraints
             setCirclePositions(prev => prev.map((circle, index) => {

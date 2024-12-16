@@ -1,5 +1,4 @@
 import { ReactNode } from "react"
-import Image from "next/image"
 import ImageSection from "./ImageSection"
 
 type SubPart = {

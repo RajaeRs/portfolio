@@ -1,13 +1,5 @@
 'use client'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
-import { MousePointerClick } from "lucide-react"
+
 const Welcome = () => {
   return (
     <section id="welcome" className="h-screen flex flex-col items-center justify-center   ">

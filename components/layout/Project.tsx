@@ -1,5 +1,15 @@
-import { PageSection } from "./about"
+import { ReactNode } from "react";
 
+export const PageSection = ({title, description}: {title: string, description: ReactNode}) => {
+    return (
+        <div className="w-full pt-4">
+            <h3 className="text-lg font-bold">{title}</h3>
+            <div className="pt-1 ml-10 md:ml-16">
+                {description}
+            </div>
+        </div>
+    )
+}
 const Project = () => {
     return (
         <section id="projects" className="h-screen pt-10 md:pt-20">
