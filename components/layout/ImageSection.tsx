@@ -99,13 +99,13 @@ const ImageSection = () => {
         >
             <div className="relative" ref={imageRef}>
                 <Image 
-                    src="/images/me.png" 
+                    src="/images/me.jpg" 
                     alt="Rajae RASEZINE" 
                     width={500} 
                     height={500} 
-                    className="w-full h-auto"
+                    className="w-full h-auto rounded-full filter  contrast-100 brightness-100 "
                 />
-                
+                <div className="absolute inset-0 bg-accent/50 mix-blend-multiply  rounded-full"></div>
                 {/* Dynamically positioned circles */}
                 <div 
                     className="absolute inset-0 pointer-events-none -z-10"
