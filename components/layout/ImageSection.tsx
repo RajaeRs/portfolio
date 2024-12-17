@@ -3,7 +3,11 @@
 import Image from 'next/image';
 import { useState, useRef, useEffect, CSSProperties, MouseEvent } from 'react';
 
-const ImageSection = () => {
+interface ImageSectionProps {
+    imageUrl: string;
+}
+
+const ImageSection = ({ imageUrl }: ImageSectionProps) => {
     const [imageSize, setImageSize] = useState({ width: 0, height: 0 });
     const [circlePositions, setCirclePositions] = useState([
         { x: -0.2, y: -0.2, size: 1.5, scale: 1 },
@@ -99,11 +103,11 @@ const ImageSection = () => {
         >
             <div className="relative" ref={imageRef}>
                 <Image 
-                    src="/images/me-2.png" 
+                    src={imageUrl} 
                     alt="Rajae RASEZINE" 
                     width={500} 
                     height={500} 
-                    className="w-full h-auto rounded-full filter  contrast-100 brightness-100 "
+                    className="w-full h-auto rounded-full"
                 />
                 <div className="absolute inset-0  mix-blend-multiply  rounded-full"></div>
                 {/* Dynamically positioned circles */}

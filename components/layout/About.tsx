@@ -44,27 +44,30 @@ const About = () => {
         ]
     }
     return (
-        <section id="about" className="h-screen pt-10 md:pt-20 ">
-            <div className="container w-full justify-between flex">
-                <p className="text-xl font-bold">About Me</p>
-                <p className="text-xl">How Am I ?</p>
-                <p className="text-xl font-bold">About Me</p>
-            </div>
-            <div className="container w-full pt-10 md:mt-20 flex flex-col-reverse md:flex-row relative">
-                <div className="w-full">
-                    <PageSection title="NAME" description={<p>Rajae RASEZINE</p>} />
-                    <PageSection title="SYNOPSIS" description={<p><span className="font-bold">Front-end</span> developer with entry-level experience.</p>} />
-                    <PageSection 
-                        title="DESCRIPTION" 
-                        description={<p>Motivated Moroccan front-end developer with a passion for learning new technologies and taking on challenging projects. I enjoy working in dynamic environments where I can contribute to innovative solutions and continuously improve my skills.</p>} 
-                        subPart={subPart}
-                    />
+        <section id="about" className="min-h-[100vh] pt-10 md:pt-20 pb-20 xl:pb-0 flex justify-center items-center ">
+            <div className="max-h-max ">
+                <div className="container w-full justify-between flex">
+                    <p className="text-xl font-bold">About Me</p>
+                    <p className="text-xl">How Am I ?</p>
+                    <p className="text-xl font-bold">About Me</p>
                 </div>
-                <div className="w-full">
-                    <ImageSection />
+                <div className="container w-full pt-10 md:mt-20 flex flex-col-reverse md:flex-row relative">
+                    <div className="w-full">
+                        <PageSection title="NAME" description={<p>Rajae RASEZINE</p>} />
+                        <PageSection title="SYNOPSIS" description={<p><span className="font-bold">Front-end</span> developer with entry-level experience.</p>} />
+                        <PageSection 
+                            title="DESCRIPTION" 
+                            description={<p>Motivated Moroccan front-end developer with a passion for learning new technologies and taking on challenging projects. I enjoy working in dynamic environments where I can contribute to innovative solutions and continuously improve my skills.</p>} 
+                            subPart={subPart}
+                        />
+                    </div>
+                    <div className="w-full h-full">
+                        <ImageSection imageUrl="/images/me-2.png" />
+                    </div>
                 </div>
             </div>
-        </section>
+
+            </section>
     )
 }
 

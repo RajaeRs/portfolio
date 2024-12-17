@@ -17,26 +17,34 @@ export default function NavBar() {
       <ul className="flex w-full h-full items-center justify-between font-bold text-lg pr-4">
         {/* Logo */}
   
-          <li className="text-2xl h-full flex ">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex flex-1 justify-center items-center container">
+          <li className="w-[20%]">
             <Link href="#welcome">
-              <Image src="/images/logo.svg" alt="logo" width={250} height={250} />
+              <Image src="/images/logo.png" alt="logo" width={150} height={100} />
             </Link>
           </li>
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-1 justify-center space-x-4">
-          <li className="w-[20%]">
+          <li className="w-[20%] h-max">
             <Link href="#about">~/ about</Link>
           </li>
-          <li className="w-[20%]">
+          {/* <li className="w-[20%] h-max">
+            <Link href="#experience">~/ experience</Link>
+          </li> */}
+          <li className="w-[20%] h-max">
             <Link href="#projects">~/ projects</Link>
           </li>
-          <li className="w-[20%]">
+          <li className="w-[20%] h-max">
             <Link href="#contact">~/ contact</Link>
           </li>
         </div>
 
         {/* Burger Menu Button */}
-        <div className="md:hidden">
+        <div className="md:hidden flex w-full justify-between px-4">
+          <li className="w-[50%]">
+            <Link href="#welcome">
+              <Image src="/images/logo.png" alt="logo" width={150} height={100} />
+            </Link>
+          </li>
           <button 
             onClick={toggleMenu} 
             className="text-foreground focus:outline-none"

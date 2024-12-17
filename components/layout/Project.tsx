@@ -12,19 +12,16 @@ export const PageSection = ({title, description}: {title: string, description: R
 }
 const Project = () => {
     return (
-        <section id="projects" className="h-screen pt-10 md:pt-20">
-            <div className="container w-full justify-between flex">
+        <section id="projects" className="min-h-[100vh] pt-10 md:pt-20">
+            {/* <div className="container w-full justify-between flex">
                 <p className="text-xl font-bold">projects(2)</p>
                 <p className="text-xl">I Learn A ....</p>
                 <p className="text-xl font-bold">projects(2)</p>
             </div>
             <div className="">
-                <div 
-                    className="absolute inset-0 bg-[url('/images/background.svg')] bg-cover bg-no-repeat bg-top -z-10">
-                </div>
                 <div className="container w-full">
                     <div className="flex flex-col-reverse md:flex-row pt-10">
-                        <div className="w-[80%] h-[800px] border border-accent/20 rounded-xl">
+                        <div className="w-[80%]  border border-accent/20 rounded-xl">
                             
                         </div>
                         <div className="w-full">
@@ -32,7 +29,8 @@ const Project = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            
         </section>
     )
 }
