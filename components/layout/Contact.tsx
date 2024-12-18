@@ -27,12 +27,12 @@ const Contact = () => {
     ]
 
     return (
-        <section id="contact" className="min-h-[100vh] flex flex-col items-center justify-center">
+        <section id="contact" className="min-h-map py-20 flex flex-col items-center justify-center">
             <div className="container w-full justify-between flex gap-10 pb-20">
-                    <p className="text-xl font-bold">contact(4)</p>
-                    <p className="text-xl capitalize">you are welcome</p>
-                    <p className="text-xl font-bold">contact(4)</p>
-                </div>
+                <p className="text-xl font-bold">contact(4)</p>
+                <p className="text-xl capitalize">you are welcome</p>
+                <p className="text-xl font-bold">contact(4)</p>
+            </div>
             <div className="container full flex flex-col md:flex-row h-full">
                 <div className="w-full">
                     <ImageSection imageUrl="/images/coffee.png"/>

@@ -20,18 +20,18 @@ export default function NavBar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex flex-1 justify-center items-center container">
           <li className="w-[20%]">
-            <Link href="#welcome">
+            <Link href="#/">
               <Image src="/images/logo.png" alt="logo" width={150} height={100} />
             </Link>
           </li>
           <li className="w-[20%] h-max">
             <Link href="#about">~/ about</Link>
           </li>
-          {/* <li className="w-[20%] h-max">
-            <Link href="#experience">~/ experience</Link>
-          </li> */}
           <li className="w-[20%] h-max">
             <Link href="#projects">~/ projects</Link>
+          </li>
+          <li className="w-[20%] h-max">
+            <Link href="#experience">~/ experience</Link>
           </li>
           <li className="w-[20%] h-max">
             <Link href="#contact">~/ contact</Link>

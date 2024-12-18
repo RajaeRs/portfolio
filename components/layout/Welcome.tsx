@@ -2,7 +2,7 @@
 
 const Welcome = () => {
   return (
-    <section id="welcome" className="min-h-[100vh] flex flex-col items-center justify-center   ">
+    <section id="welcome" className="min-h-[100vh] flex flex-col items-center justify-center">
       <div className="flex flex-col px-2 ">
         <p className="text-2xl md:text-4xl font-bold  min-w-[max-content]">
             $ <span className="h-full  bg-accent text-accent mx-4"> 0 </span>Front-end Developer,
