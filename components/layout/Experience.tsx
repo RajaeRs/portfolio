@@ -53,11 +53,11 @@ const Job : React.FC<JobProps>  = ({
                     <div className="flex flex-row gap-4 pt-4">
                         {tools && tools.map((tool, key) => (
                             <Image 
-                            src = {tool.iconPath}
-                            alt = {tool.alt}
-                            width={30}
-                            height={30}
-                            className={`${key}`}
+                                key = {key}
+                                src = {tool.iconPath}
+                                alt = {tool.alt}
+                                width={30}
+                                height={30}
                             />
                         ))}
                     </div>
@@ -65,7 +65,7 @@ const Job : React.FC<JobProps>  = ({
             }
             {
                 dots && 
-                <div className="flex flex-row gap-4 w-max  p-4">
+                <div className="flex flex-row gap-2 w-max pl-8 lg:pl-4 p-4">
                     {[...Array(3)].map((_, i) => (
                         <div 
                             key={i} 
@@ -152,7 +152,7 @@ const Experience = () => {
     ]
 
     return (
-        <section id="experience" className="min-h-max flex flex-col items-center justify-center py-20">
+        <section id="experience" className="container w-full min-h-max flex flex-col items-center justify-center py-20 lg:py-36">
             <div className="container w-full justify-between flex gap-10 pb-20 uppercase">
                 <p className="text-xl font-bold">experience(2)</p>
                 <p className="text-xl capitalize">good time</p>

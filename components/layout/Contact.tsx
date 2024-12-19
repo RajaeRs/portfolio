@@ -27,7 +27,7 @@ const Contact = () => {
     ]
 
     return (
-        <section id="contact" className="min-h-map py-20 flex flex-col items-center justify-center">
+        <section id="contact" className="min-h-map flex flex-col items-center justify-center py-20 lg:py-36">
             <div className="container w-full justify-between flex gap-10 pb-20">
                 <p className="text-xl font-bold">contact(4)</p>
                 <p className="text-xl capitalize">you are welcome</p>

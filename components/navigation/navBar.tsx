@@ -18,8 +18,8 @@ export default function NavBar() {
         {/* Logo */}
   
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-1 justify-center items-center container">
-          <li className="w-[20%]">
+        <div className="hidden md:flex flex-1 justify-between items-center container">
+          <li className="w-[20%] h-max">
             <Link href="#/">
               <Image src="/images/logo.png" alt="logo" width={150} height={100} />
             </Link>
@@ -27,9 +27,9 @@ export default function NavBar() {
           <li className="w-[20%] h-max">
             <Link href="#about">~/ about</Link>
           </li>
-          <li className="w-[20%] h-max">
+          {/* <li className="w-[20%] h-max">
             <Link href="#projects">~/ projects</Link>
-          </li>
+          </li> */}
           <li className="w-[20%] h-max">
             <Link href="#experience">~/ experience</Link>
           </li>
@@ -65,12 +65,19 @@ export default function NavBar() {
           >
             ~/ about
           </Link>
-          <Link 
+          {/* <Link 
             href="#projects" 
             className="hover:text-primary"
             onClick={toggleMenu}
           >
             ~/ projects
+          </Link> */}
+          <Link 
+            href="#experience" 
+            className="hover:text-primary"
+            onClick={toggleMenu}
+          >
+            ~/ experience
           </Link>
           <Link 
             href="#contact" 

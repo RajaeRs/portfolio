@@ -44,7 +44,7 @@ const About = () => {
         ]
     }
     return (
-        <section id="about" className="min-h-max py-20 pt-10 md:pt-20 pb-20 xl:pb-0 flex justify-center items-center ">
+        <section id="about" className="min-h-max pt-10 md:pt-20 pb-20 xl:pb-0 flex justify-center items-center py-20 lg:py-36">
             <div className="max-h-max ">
                 <div className="container w-full justify-between flex">
                     <p className="text-xl font-bold">About Me</p>
